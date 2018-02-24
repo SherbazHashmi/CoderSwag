@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CAC39A4204168F400B9FE6A /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC39A3204168F400B9FE6A /* ProductViewCell.swift */; };
 		3CCEEBFC2041234300721056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEEBFB2041234300721056 /* AppDelegate.swift */; };
 		3CCEEBFE2041234300721056 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEEBFD2041234300721056 /* CategoriesVC.swift */; };
 		3CCEEC012041234300721056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEEBFF2041234300721056 /* Main.storyboard */; };
 		3CCEEC032041234300721056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEEC022041234300721056 /* Assets.xcassets */; };
 		3CCEEC062041234300721056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEEC042041234300721056 /* LaunchScreen.storyboard */; };
 		3CCEEC112041364100721056 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEEC102041364100721056 /* CategoryCell.swift */; };
+		3CCEEC132041442000721056 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEEC122041442000721056 /* Category.swift */; };
+		3CCEEC16204145D900721056 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEEC15204145D900721056 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CAC39A3204168F400B9FE6A /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
 		3CCEEBF82041234300721056 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCEEBFB2041234300721056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CCEEBFD2041234300721056 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		3CCEEC052041234300721056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CCEEC072041234300721056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CCEEC102041364100721056 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		3CCEEC122041442000721056 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3CCEEC15204145D900721056 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		3CCEEBFA2041234300721056 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				3CCEEC14204145CB00721056 /* Services */,
 				3CCEEC0E204135C000721056 /* Model */,
 				3CCEEC0F204135C500721056 /* View */,
 				3CCEEC0D204135BB00721056 /* Controller */,
@@ -79,6 +86,7 @@
 		3CCEEC0E204135C000721056 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3CCEEC122041442000721056 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,8 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				3CCEEC102041364100721056 /* CategoryCell.swift */,
+				3CAC39A3204168F400B9FE6A /* ProductViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3CCEEC14204145CB00721056 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEEC15204145D900721056 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +182,10 @@
 			files = (
 				3CCEEBFE2041234300721056 /* CategoriesVC.swift in Sources */,
 				3CCEEBFC2041234300721056 /* AppDelegate.swift in Sources */,
+				3CAC39A4204168F400B9FE6A /* ProductViewCell.swift in Sources */,
 				3CCEEC112041364100721056 /* CategoryCell.swift in Sources */,
+				3CCEEC132041442000721056 /* Category.swift in Sources */,
+				3CCEEC16204145D900721056 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
