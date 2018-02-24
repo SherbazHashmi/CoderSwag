@@ -1,3 +1,4 @@
+
 //
 //  CategoryCell.swift
 //  coder-swag
@@ -10,6 +11,11 @@ import UIKit
 
 class CategoryCell: UITableViewCell {
 
+    
+    @IBOutlet weak var categoryImage : UIImageView!
+    @IBOutlet weak var catesgoryTitle : UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
